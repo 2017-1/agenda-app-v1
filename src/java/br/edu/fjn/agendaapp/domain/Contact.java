@@ -10,17 +10,28 @@ package br.edu.fjn.agendaapp.domain;
  * @author leonardo
  */
 
-public class Contato {
+public class Contact {
     
     private String name;
     private String phoneNumber;
+    private Address address;
 
-    public Contato(String name, String phoneNumber) {
+    public Contact(String name, String phoneNumber, Address address) {
         this.name = name;
         this.phoneNumber = phoneNumber;
+        this.address = address;
     }
     
-   
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    
     public String getName() {
         return name;
     }

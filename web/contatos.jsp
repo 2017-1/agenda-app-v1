@@ -4,7 +4,6 @@
     Author     : leonardo
 --%>
 
-<%@page import="br.edu.fjn.agendaapp.domain.Contato"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,14 +13,13 @@
     </head>
     <body>
         <%@include  file="nav.jsp" %>
-        <% 
-//             Contato contato = (Contato) application.getAttribute("contact");
-               Contato contato = (Contato) request.getAttribute("contact");
-         %>
-         
+          
          <div>
-             <p>Nome do contato: <%=contato.getName()%></p>
-             <p>Número do contato: <%=contato.getPhoneNumber()%></p>
+             <p>Nome do contato:${contact.name}</p>
+             <p>Número do contato:${contact.phoneNumber}</p>
+             <p>Rua do contato: ${contact.address.street}</p>
+             <p>Número da casa do contato: ${contact.address.number}</p>
+             <p>CEP do contato: ${contact.address.zipCode}</p>
          </div>
-    </body>
+    </body>        
 </html>

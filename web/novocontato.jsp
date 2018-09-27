@@ -22,6 +22,18 @@
                 <label>Telefone:</label>
                 <input type="text" name="phoneNumber" />
             </div>
+            <div>
+                <label>Rua:</label>
+                <input type="text" name="street" />
+            </div>
+            <div>
+                <label>Número:</label>
+                <input type="text" name="number" />
+            </div>
+            <div>
+                <label>CEP:</label>
+                <input type="text" name="zipCode" />
+            </div>
             <button type="submit">Salvar</button>                
         </form>
     </body>
